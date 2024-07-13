@@ -94,36 +94,61 @@
 //   );
 // }
 
-//ตัวอย่าง ตอนที่13
-import { useState } from "react";
+// //ตัวอย่าง ตอนที่13
+// import { useState } from "react";
+// import Header from "./componants/Header";
+
+// function App() {
+//   //สร้าง state
+
+//   const [students, setStudent] = useState([
+//     { id: 1, name: "yai" },
+//     { id: 2, name: "kem" },
+//     { id: 3, name: "nuch" },
+//     { id: 4, name: "yai" },
+//   ]);
+//   const [show, setShow] = useState(true); //show detail
+
+//   function deleteStudent(id) {
+//     // console.log(id);
+//     setStudent(students.filter((item) => item.id !== id));
+//   }
+//   //พื้นที่แสดงผล
+//   return (
+//     <>
+//       <Header />
+//       <h1>จำนวนนักเรียน = {students.length}</h1>
+//       {/* <h2>{show}</h2> */}
+//       <button onClick={() => setShow(!show)}>สลับ</button>
+//       <ul>
+//         {show &&
+//           students.map((item) => (
+//             <li key={item.id}>
+//               {/* {item.id} - {item.name} */}
+//               <p>
+//                 {item.id} - {item.name}
+//                 <button onClick={() => deleteStudent(item.id)}>Delete</button>
+//               </p>
+//             </li>
+//           ))}
+//       </ul>
+//     </>
+//   );
+// }
+// export default App;
+
+//ตัวอย่าง ตอนที่15
+import Header from "./componants/Header";
+import StudentList from "./componants/StudentList";
+
 function App() {
   //สร้าง state
 
-  const [students, setStudent] = useState([
-    { id: 1, name: "yai" },
-    { id: 2, name: "kem" },
-    { id: 3, name: "nuch" },
-    { id: 4, name: "yai" },
-  ]);
-  function deleteStudent(id) {
-    // console.log(id);
-    setStudent(students.filter((item) => item.id !== id));
-  }
   //พื้นที่แสดงผล
   return (
     <>
-      <h1>จำนวนนักเรียน = {students.length}</h1>
-      <ul>
-        {students.map((item) => (
-          <li key={item.id}>
-            {/* {item.id} - {item.name} */}
-            <p>
-              {item.id} - {item.name}
-              <button onClick={() => deleteStudent(item.id)}>Delete</button>
-            </p>
-          </li>
-        ))}
-      </ul>
+      <Header />
+      <StudentList />
     </>
   );
 }
