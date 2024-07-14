@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../assets/Header.css"; // ตรวจสอบการอิมพอร์ตให้ถูกต้องตามโครงสร้าง
 
 const Header = () => {
   return (
-    <header className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <header className="navbar navbar-expand-lg navbar-dark bg-dark w-100">
       <div className="container">
         <Link className="navbar-brand" to="/">
           CEOSofts
