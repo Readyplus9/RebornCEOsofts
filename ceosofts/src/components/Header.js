@@ -1,30 +1,48 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../assets/Header.css"; // ตรวจสอบการอิมพอร์ตให้ถูกต้องตามโครงสร้าง
+import "../assets/Header.css";
+import {
+  FaHome,
+  FaShoppingCart,
+  FaMoneyCheckAlt,
+  FaWarehouse,
+  FaChartLine,
+  FaUser,
+  FaCog,
+  FaSignInAlt,
+  FaSignOutAlt,
+} from "react-icons/fa";
 
 const Header = () => {
   return (
-    <header className="navbar navbar-expand-lg navbar-dark bg-dark w-100">
-      <div className="container">
-        <Link className="navbar-brand" to="/">
-          CEOSofts
-        </Link>
+    <header className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div className="text-center">
+        {" "}
+        {/* ใช้ container-fluid */}
+        {/* <Link className="navbar-brand" to="/">
+          Home
+        </Link> */}
         <div className="collapse navbar-collapse">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <Link className="nav-link" to="/dashboard">
-                Dashboard
+              <Link className="nav-link" to="/AboutUs">
+                Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/login">
-                Login
+              <Link className="nav-link" to="/AboutUs">
+                About Us
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/logout">
-                Logout
+              <Link className="nav-link" to="/Product">
+                Products and services
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/ContactUs">
+                Contact Us
               </Link>
             </li>
           </ul>

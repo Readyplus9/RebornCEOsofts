@@ -1,6 +1,6 @@
 /* src/assets/Sidebar.css */
 .sidebar {
-  width: 250px;
+  width: 200px;
   height: 100%;
   background-color: #2c3e50;
   color: white;
@@ -12,10 +12,14 @@
   flex-direction: column;
   justify-content: flex-start;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  font-size: 120%;
+  /* margin-top: 60px; */
+  z-index: 1000;
 }
 
+/* top bar */
 .sidebar-header {
-  padding: 20px;
+  padding: 15px;
   background-color: #1a252f;
   text-align: center;
   font-size: 1.5em;
@@ -41,12 +45,14 @@
   background-color: #34495e;
 }
 
+/* ระยะicon-text */
 .sidebar-list li svg {
   margin-right: 10px;
 }
 
+/* bottom bar */
 .sidebar-footer {
-  padding: 10px 20px;
+  padding: 1px 1px;
   background-color: #1a252f;
   text-align: center;
   margin-top: auto;

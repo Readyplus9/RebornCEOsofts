@@ -16,7 +16,7 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="sidebar-header">
-        <h3>รายงาน</h3>
+        <h3>CEO softs</h3>
       </div>
       <ul className="sidebar-list">
         <li>
