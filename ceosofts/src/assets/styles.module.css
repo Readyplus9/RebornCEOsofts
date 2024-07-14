@@ -1,0 +1,110 @@
+/* Global styles */
+.container {
+  font-family: "Arial, sans-serif";
+  color: #333;
+}
+
+/* Header styles */
+.header {
+  background-color: #333;
+  padding: 10px;
+  color: #fff;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navItem {
+  margin-right: 20px;
+}
+
+.navLink {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Main content styles */
+.main {
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5em;
+}
+
+.subtitle {
+  font-size: 1.5em;
+}
+
+.description {
+  margin: 10px 0;
+}
+
+.cta {
+  margin: 20px 0;
+}
+
+.credentials {
+  margin: 10px 0;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Features section styles */
+.features {
+  margin: 20px 0;
+}
+
+.featuresTitle {
+  font-size: 1.8em;
+}
+
+.featuresDescription {
+  font-size: 1em;
+}
+
+/* Contact section styles */
+.contact {
+  margin: 20px 0;
+}
+
+.contactLink {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+/* Footer styles */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.footerSection {
+  text-align: center;
+}
+
+.footerLink {
+  color: #4caf50;
+  text-decoration: none;
+}
