@@ -138,18 +138,33 @@
 // export default App;
 
 //ตัวอย่าง ตอนที่15
+
 import Header from "./componants/Header";
 import StudentList from "./componants/StudentList";
-
+import { useState } from "react";
+import AddForm from "./componants/AddForm";
+import "./App.css";
 function App() {
   //สร้าง state
-
+  const [students, setStudent] = useState([
+    { id: 1, name: "yai" },
+    { id: 2, name: "kem" },
+    { id: 3, name: "nuch" },
+    { id: 4, name: "yai" },
+  ]);
+  function deleteStudent(id) {
+    // console.log(id);
+    setStudent(students.filter((Item) => Item.id !== id));
+  }
   //พื้นที่แสดงผล
   return (
-    <>
-      <Header />
-      <StudentList />
-    </>
+    <div className="Container">
+      <Header title="Home" />
+      <main>
+        <AddForm />
+        <StudentList students={students} deleteStudent={deleteStudent} />
+      </main>
+    </div>
   );
 }
 export default App;
