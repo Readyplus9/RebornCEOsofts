@@ -45,12 +45,14 @@ const Sidebar = () => {
         </li>
       </ul>
       <div className="sidebar-footer">
-        <li>
-          <FaSignInAlt /> Login
-        </li>
-        <li>
-          <FaSignOutAlt /> Logout
-        </li>
+        <ul className="sidebar-list">
+          <li>
+            <FaSignInAlt /> Login
+          </li>
+          <li>
+            <FaSignOutAlt /> Logout
+          </li>
+        </ul>
       </div>
     </div>
   );
