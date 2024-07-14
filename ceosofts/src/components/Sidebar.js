@@ -1,5 +1,15 @@
-// src/components/Sidebar.js
 import React from "react";
+import {
+  FaHome,
+  FaShoppingCart,
+  FaMoneyCheckAlt,
+  FaWarehouse,
+  FaChartLine,
+  FaUser,
+  FaCog,
+  FaSignInAlt,
+  FaSignOutAlt,
+} from "react-icons/fa";
 import "../assets/Sidebar.css";
 
 const Sidebar = () => {
@@ -9,18 +19,38 @@ const Sidebar = () => {
         <h3>รายงาน</h3>
       </div>
       <ul className="sidebar-list">
-        <li>Dashboard</li>
-        <li>สำนักงานขาย</li>
-        <li>ฝ่ายจัดซื้อ</li>
-        <li>ฝ่ายคลังสินค้า</li>
-        <li>ฝ่ายการเงิน</li>
-        <li>ฝ่ายบุคคล</li>
-        <li>การจัดการระบบ</li>
-        <li>User Setting</li>
+        <li>
+          <FaHome /> Dashboard
+        </li>
+        <li>
+          <FaShoppingCart /> สำนักงานขาย
+        </li>
+        <li>
+          <FaMoneyCheckAlt /> ฝ่ายจัดซื้อ
+        </li>
+        <li>
+          <FaWarehouse /> ฝ่ายคลังสินค้า
+        </li>
+        <li>
+          <FaChartLine /> ฝ่ายการเงิน
+        </li>
+        <li>
+          <FaUser /> ฝ่ายบุคคล
+        </li>
+        <li>
+          <FaCog /> การจัดการระบบ
+        </li>
+        <li>
+          <FaUser /> User Setting
+        </li>
       </ul>
       <div className="sidebar-footer">
-        <li>Login</li>
-        <li>Logout</li>
+        <li>
+          <FaSignInAlt /> Login
+        </li>
+        <li>
+          <FaSignOutAlt /> Logout
+        </li>
       </div>
     </div>
   );

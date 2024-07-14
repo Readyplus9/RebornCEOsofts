@@ -108,3 +108,24 @@
   color: #4caf50;
   text-decoration: none;
 }
+/* src/assets/styles.module.css */
+.title {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #34495e;
+}
+
+.button {
+  padding: 10px 30px;
+  margin-top: 20px;
+  background-color: #2ecc71;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #27ae60;
+}

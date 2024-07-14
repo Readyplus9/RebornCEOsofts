@@ -1,32 +1,11 @@
 import React from "react";
-import styles from "../assets/styles.module.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
-      <div className={styles.footerSection}>
-        <p>26 New Messages!</p>
-        <a href="#" className={styles.footerLink}>
-          View Details
-        </a>
-      </div>
-      <div className={styles.footerSection}>
-        <p>11 New Tasks!</p>
-        <a href="#" className={styles.footerLink}>
-          View Details
-        </a>
-      </div>
-      <div className={styles.footerSection}>
-        <p>123 New Orders!</p>
-        <a href="#" className={styles.footerLink}>
-          View Details
-        </a>
-      </div>
-      <div className={styles.footerSection}>
-        <p>13 New Tickets!</p>
-        <a href="#" className={styles.footerLink}>
-          View Details
-        </a>
+    <footer className="footer mt-auto py-3 bg-dark text-white text-center">
+      <div className="container">
+        <p>&copy; 2024 CEOsofts. All rights reserved.</p>
       </div>
     </footer>
   );
