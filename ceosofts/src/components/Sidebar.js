@@ -23,7 +23,7 @@ const Sidebar = () => {
           <FaHome /> Dashboard
         </li>
         <li>
-          <FaShoppingCart /> สำนักงานขาย
+          <FaShoppingCart /> ฝ่ายขาย
         </li>
         <li>
           <FaMoneyCheckAlt /> ฝ่ายจัดซื้อ
