@@ -2,22 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../assets/Header.css";
-import {
-  FaHome,
-  FaShoppingCart,
-  FaMoneyCheckAlt,
-  FaWarehouse,
-  FaChartLine,
-  FaUser,
-  FaCog,
-  FaSignInAlt,
-  FaSignOutAlt,
-} from "react-icons/fa";
 
 const Header = () => {
   return (
-    <header className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div className="text-center">
+    <header className="navbar navbar-expand-lg navbar-light w-100">
+      <div className="container-fluid">
         {" "}
         {/* ใช้ container-fluid */}
         {/* <Link className="navbar-brand" to="/">

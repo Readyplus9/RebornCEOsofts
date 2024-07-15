@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 0 5px rgba(48, 47, 47, 0.1);
   font-size: 120%;
   /* margin-top: 60px; */
   z-index: 1000;
@@ -20,7 +20,7 @@
 /* top bar */
 .sidebar-header {
   padding: 15px;
-  background-color: #1a252f;
+  background-color: #253342;
   text-align: center;
   font-size: 1.5em;
   font-weight: bold;
@@ -42,7 +42,7 @@
 }
 
 .sidebar-list li:hover {
-  background-color: #34495e;
+  background-color: #4377af;
 }
 
 /* ระยะicon-text */
@@ -52,8 +52,8 @@
 
 /* bottom bar */
 .sidebar-footer {
-  padding: 1px 1px;
-  background-color: #1a252f;
+  padding: 0.5px 0.5px;
+  background-color: #2c3e50;
   text-align: center;
   margin-top: auto;
 }

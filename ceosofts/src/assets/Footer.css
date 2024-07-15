@@ -2,7 +2,7 @@
 .footer {
   width: 100%;
   margin: 0 auto; /* จัดให้อยู่กลาง */
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
   /* margin-left: 200px; */
   position: absolute;
   bottom: 0;
@@ -12,4 +12,8 @@
   align-items: center; /* จัดวางตัวหนังสือให้อยู่ตรงกลางในแนวตั้ง */
   justify-content: center; /* จัดวางตัวหนังสือให้อยู่ตรงกลางในแนวนอน */
   display: flex;
+  padding-top: 2rem; /* 12px */
+  padding-bottom: 0.75rem; /* 12px */
+  background-color: #3f51b5; /* เปลี่ยนสีพื้นหลังเป็นสีฟ้า */
+  color: white; /* เปลี่ยนสีตัวหนังสือเป็นสีขาว */
 }

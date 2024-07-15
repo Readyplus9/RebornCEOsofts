@@ -4,8 +4,8 @@ import "../assets/Footer.css"; // ตรวจสอบการอิมพอ�
 
 const Footer = () => {
   return (
-    <footer className="footer py-3 bg-dark text-white">
-      <div>
+    <footer className="footer">
+      <div className="container-fluid">
         <p>
           Web Developer by CEO softs &copy; 2024 CEOsofts. All rights reserved.
         </p>
