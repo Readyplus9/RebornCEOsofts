@@ -1,23 +1,19 @@
-/* src/assets/Sidebar.css */
 .sidebar {
-  width: 200px;
+  width: 220px;
   height: 100%;
   background-color: #3f51b5;
   color: white;
   position: fixed;
   top: 0;
   left: 0;
-  overflow: hidden;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   box-shadow: 2px 0 5px rgba(48, 47, 47, 0.1);
   font-size: 120%;
-  /* margin-top: 60px; */
-  z-index: 1000;
 }
 
-/* top bar */
 .sidebar-header {
   padding: 15px;
   background-color: #364599;
@@ -45,31 +41,23 @@
   background-color: #4377af;
 }
 
-/* ระยะicon-text */
 .sidebar-list li svg {
   margin-right: 10px;
 }
 
-/* bottom bar */
-.sidebar-footer {
-  padding: 0.5px 0.5px;
-  background-color: #3f51b5;
-  text-align: center;
-  margin-top: auto;
+.submenu {
+  list-style-type: none;
+  padding-left: 20px;
+  margin: 0;
+  background-color: #555;
 }
+
 .submenu li {
   padding: 10px 20px;
+  font-size: 0.9em;
   color: white;
 }
-.sidebar-footer {
-  padding: 10px;
-}
 
-.sidebar-footer .sidebar-list {
-  padding: 0;
-}
-
-.sidebar-footer .sidebar-list li {
-  padding: 10px 20px;
-  color: white;
+.submenu li:hover {
+  background-color: #666;
 }
