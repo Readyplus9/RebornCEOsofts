@@ -3,7 +3,10 @@ import React from 'react'
 const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'))
 const Colors = React.lazy(() => import('./views/theme/colors/Colors'))
 const Typography = React.lazy(() => import('./views/theme/typography/Typography'))
+//Sale
+const AddProduct = React.lazy(() => import('./views/Sale/AddProduct/AddProduct'))
 
+//END Sale
 // Base
 const Accordion = React.lazy(() => import('./views/base/accordion/Accordion'))
 const Breadcrumbs = React.lazy(() => import('./views/base/breadcrumbs/Breadcrumbs'))
@@ -57,6 +60,12 @@ const routes = [
   { path: '/theme', name: 'Theme', element: Colors, exact: true },
   { path: '/theme/colors', name: 'Colors', element: Colors },
   { path: '/theme/typography', name: 'Typography', element: Typography },
+
+  //Sale
+  { path: '/Sale', name: 'Sale', element: Cards, exact: true },
+  { path: '/Sale/AddProduct', name: 'Add Product', element: AddProduct, exact: true },
+  //END Sale
+
   { path: '/base', name: 'Base', element: Cards, exact: true },
   { path: '/base/accordion', name: 'Accordion', element: Accordion },
   { path: '/base/breadcrumbs', name: 'Breadcrumbs', element: Breadcrumbs },
